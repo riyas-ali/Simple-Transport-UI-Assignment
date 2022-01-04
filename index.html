@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- Bootstrap Table -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Dropdown Search-bar -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Two+Tone|Material+Icons+Sharp">
+
+    <title>TRANSPORT SIMPLE | DASHBOARD</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container-fluid header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 brand-logo">
+                    <img src="images/transport-simple-logo.png" alt="Transport-Simple-Logo">
+                </div>
+                <div class="col-xl-6">
+                    <div class="search_box">
+                        <div class="dropdown">
+                            <div class="default_option">All</div>
+                            <ul>
+                                <li>All</li>
+                                <li>Recent</li>
+                                <li>Popular</li>
+                            </ul>
+                        </div>
+                        <div class="search_field">
+                            <input type="text" class="input" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 user-profile">
+                    <i class="far fa-bell"></i>
+                    <img src="images/user.png" alt="User Profile Photo">
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            Simple Transport
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">More</button>
+                            <button class="dropdown-item" type="button">Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main-Nav -->
+    <div class="container-fluid main-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        <span class="material-icons-outlined">
+                            dashboard
+                        </span>
+                        Main 1
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        <span class="material-icons-outlined">
+                            rocket_launch
+                        </span>
+                        Main 2
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        <span class="material-icons-outlined">
+                            settings
+                        </span>
+                        Main 3
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        <span class="material-icons-outlined">
+                            currency_rupee
+                        </span>
+                        Main 4
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        <span class="material-icons-outlined">
+                            insert_chart
+                        </span>
+                        Main 5
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        <span class="material-icons-outlined">
+                            date_range
+                        </span>
+                        Main 6
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        <span class="material-icons-outlined">
+                            my_location
+                        </span>
+                        Main 7
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        <span class="material-icons-outlined">
+                            timer
+                        </span>
+                        Main 8
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account-Info -->
+    <div class="container account-info">
+        <div class="row">
+            <div class="col-xl-6">
+                <h4>Summary</h4>
+            </div>
+            <div class="col-xl-6 text-right">
+                <input type="date" id="date" class="date" name="date" placeholder="date">
+            </div>
+        </div>
+        <div class="row account-details">
+            <div class="col-xl-4">
+                <p>Acc. No.: <span>1234567890QWERTY</span></p>
+                <p>Acc. Holder.: <span>Jasdeep Singh</span></p>
+                <p>Bank : <span>HDFC Bank</span></p>
+            </div>
+            <div class="col-xl-4">
+                <p>Branch: <span>Kasturi Nagar Branch</span></p>
+                <p>IFSC.: <span>HDFC12345</span></p>
+            </div>
+            <div class="col-xl-4 text-center user-active">
+                <p>Active</p>
+            </div>
+        </div>
+        <div class="row account-balance">
+            <div class="col-xl-4">
+                <div class="row bank-balance balance-total">
+                    <div class="col-xl-9">
+                        <p>Begining Balance</p>
+                        <p><strong>Rs. 20,000</strong></p>
+                    </div>
+                    <div class="col-xl-3">
+                        <span class="material-icons-outlined">
+                            payments
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="row going-balance balance-total">
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <p>Going In</p>
+                                <p><strong>Rs. 20,000</strong></p>
+                            </div>
+                            <div class="col-xl-3">
+                                <span class="material-icons-outlined">
+                                    payments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="row">
+                            <div class="col-xl-9">
+                                <p>Going Out</p>
+                                <p><strong>Rs. 20,000</strong></p>
+                            </div>
+                            <div class="col-xl-3">
+                                <span class="material-icons-outlined">
+                                    payments
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="row end-balance balance-total">
+                    <div class="col-xl-9">
+                        <p>Begining Balance</p>
+                        <p><strong>Rs. 20,000</strong></p>
+                    </div>
+                    <div class="col-xl-3">
+                        <span class="material-icons-outlined">
+                            payments
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cash Summary -->
+    <div class="container cash-summary">
+        <div class="row">
+            <div class="col-xl-6">
+                <h6>Cash Summary</h6>
+            </div>
+            <div class="col-xl-6 text-right">
+                <input type="month" id="month" name="month" placeholder="April">
+                <input type="week" id="week" name="week" placeholder="Week">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 chart-data">
+                <div class="pink"></div>
+                Values April
+            </div>
+            <div class="col-xl-2 chart-data">
+                <div class="yellow"></div>Values March
+            </div>
+        </div>
+
+        <!-- Chart -->
+        <canvas id="myChart" style="width:100%; height: 250px; margin: 20px 0;"></canvas>
+        <div class="transactions">
+            <div class="row text-center summary-nav">
+                <div class="col-xl-2">
+                    <h6>Transactions</h6>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        All
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        Deposits
+                    </a>
+                </div>
+                <div class="col-xl-1">
+                    <a href="#" class="hvr-underline-reveal">
+                        Withdrawals
+                    </a>
+                </div>
+            </div>
+
+            <!-- Top Table -->
+            <table class="table border table-striped  top-table" id="dataTable" width="100%" cellspacing="0">
+                <thead class="text-uppercase">
+                    <tr>
+                        <th>Date</th>
+                        <th>Transaction Detail</th>
+                        <th>Withdrawals</th>
+                        <th>Deposited</th>
+                        <th>Running Balance</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                    <tr>
+                        <td>01/19/2018</td>
+                        <td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td>₹ 5,000</td>
+                        <td><span class="material-icons-outlined">
+                                more_vert
+                            </span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- Bottom Table -->
+        <div class="container bottom-table">
+            <table class="table text-center border" id="example">
+                <thead>
+                    <tr>
+                        <th scope="col">SELECT</th>
+                        <th scope="col">DATE OF BILL</th>
+                        <th scope="col">BILL NUMBER</th>
+                        <th scope="col">AMOUNT DATE</th>
+                        <th scope="col">BILL AMOUNT</th>
+                        <th scope="col">AMOUNT DUE</th>
+                        <th scope="col">ADJUSTMENT</th>
+                        <th scope="col">WITHHOLD</th>
+                        <th scope="col">BALANCE</th>
+                        <th scope="col">AMOUNT PAID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row"><input type="checkbox" name=""></td>
+                        <td>01/19/2018</td>
+                        <td>123456789</td>
+                        <td>01/19/2018</td>
+                        <td>5000</td>
+                        <td>5000</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td><input type="number" placeholder="1000"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row"><input type="checkbox" name=""></td>
+                        <td>01/19/2018</td>
+                        <td>123456789</td>
+                        <td>01/19/2018</td>
+                        <td>5000</td>
+                        <td>5000</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td><input type="number" placeholder="1000"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row"><input type="checkbox" name=""></td>
+                        <td>01/19/2018</td>
+                        <td>123456789</td>
+                        <td>01/19/2018</td>
+                        <td>5000</td>
+                        <td>5000</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td><input type="number" placeholder="1000"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row"><input type="checkbox" name=""></td>
+                        <td>01/19/2018</td>
+                        <td>123456789</td>
+                        <td>01/19/2018</td>
+                        <td>5000</td>
+                        <td>5000</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td><input type="number" placeholder="1000"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="container back-button">
+        <button type="button" class="btn btn-outline-primary">Back</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-xl-8">
+                © 2018 Transport Simple. Trademarks and brands are the property of their respective owners.
+            </div>
+            <div class="col-xl-4">
+                <span><a href="#">Terms</a></span>
+                <span><a href="#">About</a></span>
+                <span><a href="#">Help</a></span>
+                <span><a href="#">Contact</a></span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Bootstrap Table -->
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
